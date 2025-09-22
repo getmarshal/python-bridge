@@ -30,7 +30,13 @@
         "psr/container": "^1.1"
     },
     "scripts": {
-        "python": ". venv/bin/activate && python run.py",
-        "hypercorn": ". venv/bin/activate && hypercorn run.py"
+        "python": [
+            "Composer\\Config::disableProcessTimeout",
+            ". venv/bin/activate && python run.py"
+        ],
+        "hypercorn": [
+            "Composer\\Config::disableProcessTimeout",
+            ". venv/bin/activate && hypercorn run.py"
+        ]
     }
 }
