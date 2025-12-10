@@ -14,16 +14,10 @@
             "email": "collinspamba@outlook.com"
         }
     ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../eventmanager"
-        }
-    ],
+    "config": {
+        "sort-packages": true
+    },
     "require": {
-        "marshal/eventmanager": "dev-master",
         "psr/http-message": "2.0",
         "psr/http-client": "^1.0",
         "psr/http-factory": "^1.1",

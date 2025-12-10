@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Marshal\PythonBridge\Event;
 
-use Marshal\EventManager\ErrorMessagesTrait;
-use Marshal\EventManager\EventParametersTrait;
 use Psr\Http\Message\ResponseInterface;
 
 class RunPythonScriptEvent

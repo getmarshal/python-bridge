@@ -4,23 +4,15 @@ declare(strict_types=1);
 
 namespace Marshal\PythonBridge\Listener;
 
-use Marshal\EventManager\EventListenerInterface;
 use Marshal\PythonBridge\Event\RunPythonScriptEvent;
 use Marshal\PythonBridge\Transport\TransportInterface;
 
-class PythonEventsListener implements EventListenerInterface
+class PythonEventsListener
 {
     private string $validationMessage;
 
     public function __construct(private TransportInterface $transport, private array $config)
     {
-    }
-
-    public function getListeners(): array
-    {
-        return [
-            RunPythonScriptEvent::class => ['listener' => [$this, 'onRunPythonScriptEvent']],
-        ];
     }
 
     public function onRunPythonScriptEvent(RunPythonScriptEvent $event): void

@@ -28,8 +28,12 @@ class ConfigProvider
     private function getEventsConfig(): array
     {
         return [
-            Listener\PythonEventsListener::class => [
-                Event\RunPythonScriptEvent::class,
+            'listeners' => [
+                Listener\PythonEventsListener::class => [
+                    Event\RunPythonScriptEvent::class => [
+                        'listener' => 'onRunPythonScriptEvent',
+                    ],
+                ],
             ],
         ];
     }
