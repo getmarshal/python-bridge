@@ -2,7 +2,7 @@
     "name": "marshal/python-bridge",
     "description": "Execute python scripts in Marshal",
     "type": "library",
-    "license": "MIT",
+    "license": "AGPL-3.0-or-later",
     "autoload": {
         "psr-4": {
             "Marshal\\PythonBridge\\": "src/"

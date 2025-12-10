@@ -3,3 +3,6 @@ venv/
 __pycache__/
 .ipynb_checkpoints/
 *.ipynb
+local.py
+local.php
+*local.php
