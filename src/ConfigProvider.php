@@ -42,6 +42,17 @@ class ConfigProvider
     {
         return [
             'host' => 'http://localhost:8000',
+            'paths' => [
+                'marshal' => [
+                    __DIR__ . '/../app'
+                ],
+            ],
+            'scripts' => [
+                'marshal:ping' => [
+                    'module' => 'app.ping',
+                    'function' => 'ping',
+                ],
+            ],
         ];
     }
 }
